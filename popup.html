@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		body {
+			min-width: 300px;
+		}
+
+		.helper-box a {
+			margin-right: 80%;
+			margin-top: 10px;
+		}
+
+		input.hidden {
+			opacity: 0;
+		}
+
+		.row {
+			justify-content: center;
+			margin: 5px 0;
+			width: 100%;
+		}
+		
+		.square_button {
+    border-color: rgb(140, 130, 115);
+    color: rgb(232, 230, 227);
+    background-color: transparent;
+}
+
+.square_button {
+    border-color: #000;
+    color: #000;
+    word-wrap: break-word;
+    word-break: break-word;
+    transition: background-color .3s,border-color .3s;
+    background-color: transparent;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Programme,Arial,sans-serif;
+    font-size: 10Spx;
+    line-height: 1.4rem;
+    margin: 0;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    vertical-align: top;
+    -webkit-appearance: none;
+}
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+input {
+    background: #fff;
+    border: 0.15rem solid #ccc;
+    border-radius: 0;
+    color: #000;
+    font-family: Programme,Arial,sans-serif;
+    font-size: 10Spx;
+    font-weight: 100;
+    line-height: inherit;
+    padding: 0.25rem;
+    resize: vertical;
+    -webkit-appearance: none;
+	height: 23px;
+}
+
+	.divtitulo {
+	background-color: #FFFF64;
+	}
+	
+	.titulo {
+		font-family: Programme, Arial, sans-serif;
+		font-size: 25px;
+		color: BLACK;
+	}
+	</style>
+</head>
+
+<body>
+	
+	<center>
+	<div class ="divtitulo">
+	<h1 class="titulo">Genius Spanish Helper</h1>
+	</div>
+	</center>
+	<h3>Añadir Fecha</h3>
+	<div class="row">
+		<center>
+			<button class="dateButton square_button">Hoy</button>
+			<button class="dateButton square_button">Ayer</button>
+			<button class="dateButton square_button">Mañana</button>
+		</center>
+	</div>
+	<br>
+	<hr>
+	<div class="row">
+		<h3>Fecha personalizada</h3>
+		<input type="number" placeholder="ddmmyyyy">
+		<button class="customButton square_button">Establecer</button>
+	</div>
+	<br>
+	<hr>
+	<h3>Copiar símbolos</h3>
+	<div class="row">
+		<button class="copyButton square_button"><></button>
+		<button class="copyButton square_button">—</button>
+		<button class="copyButton square_button">​​</button>
+		<button class="copyButton square_button">˂</button>
+		<button class="copyButton square_button">❨</button>
+		<button class="copyButton square_button">❩</button>
+	</div>
+	<script src="popup.js"></script>
+	<br>
+	<hr>
+	<footer>
+	<br>
+	<hr>
+	<small>Traducido y adaptado de <a href="https://chrome.google.com/webstore/detail/genius-deutschland-helper/bfbjcpeefdncfjgenjopolilhccbdjci">Genius Deutschland Helper</a></small>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"name": "Genius Spanish Helper",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Ayuda para Genius en Español",
+	"icons": {
+		"180": "icon_180.png"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://genius.com/*"],
+			"js": ["contentScript.js"],
+			"css": ["content.css"]
+		}
+	],
+	"page_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"180": "icon_180.png"
+		}
+	},
+	"permissions": ["declarativeContent", "activeTab"]
+}
